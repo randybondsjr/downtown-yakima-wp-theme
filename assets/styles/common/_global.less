@@ -1,9 +1,105 @@
+body {
+  font-weight: 500;
+}
 .wrap {
   background: #e5ddd0 url('../images/canvas.jpg') top center no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 }
 .no-side-margin {
   margin-left: -15px;
   margin-right: -15px;
+}
+.home .main {
+  padding-left: 0;
+  padding-right: 0;
+}
+.home .events, .home .news {
+
+}
+.menu-taste>a, 
+.navbar-default .navbar-nav>li.menu-taste>a:hover,
+.navbar-default .navbar-nav>li.menu-taste>a:active,
+.navbar-default .navbar-nav>li.menu-taste>a:focus,
+.navbar-default .navbar-nav>.open.menu-taste>a,
+.navbar-default .navbar-nav>.active.menu-taste>a {
+  background: @taste;
+}
+.menu-play>a, 
+.navbar-default .navbar-nav>li.menu-play>a:hover,
+.navbar-default .navbar-nav>li.menu-play>a:active,
+.navbar-default .navbar-nav>li.menu-play>a:focus,
+.navbar-default .navbar-nav>.open.menu-play>a,
+.navbar-default .navbar-nav>.active.menu-play>a {
+  background: @play;
+}
+h1.play,
+h2.play,
+h3.play,
+h4.play,
+h5.play,
+h6.play,
+.tribe-events-list-widget h3{
+  background: fade(@play, 60%);
+  padding: 12px 10px;
+  text-transform: uppercase;
+  margin: 0 -15px;
+  text-align: center;
+}
+.events, .tribe-events-list-widget{
+  background: fade(@play, 20%);
+  margin-left: -15px;
+  padding: 0 15px 15px;
+}
+.tribe-events-list-widget ol {
+  padding-left: 0;
+}
+.tribe-events-list-widget h4 {
+  text-transform: uppercase;
+}
+.news{
+  background: fade(@see, 60%);
+  margin-right: -15px;
+  padding: 0 15px 15px;
+}
+.menu-shop>a,
+.navbar-default .navbar-nav>li.menu-shop>a:hover,
+.navbar-default .navbar-nav>li.menu-shop>a:active,
+.navbar-default .navbar-nav>li.menu-shop>a:focus,
+.navbar-default .navbar-nav>.open.menu-shop>a,
+.navbar-default .navbar-nav>.active.menu-shop>a {
+  background: @shop;
+}
+.menu-stay>a,
+.navbar-default .navbar-nav>li.menu-stay>a:hover,
+.navbar-default .navbar-nav>li.menu-stay>a:active,
+.navbar-default .navbar-nav>li.menu-stay>a:focus,
+.navbar-default .navbar-nav>.open.menu-stay>a,
+.navbar-default .navbar-nav>.active.menu-stay>a {
+  background: @stay;
+}
+.menu-see>a, 
+.navbar-default .navbar-nav>li.menu-see>a:hover,
+.navbar-default .navbar-nav>li.menu-see>a:active,
+.navbar-default .navbar-nav>li.menu-see>a:focus,
+.navbar-default .navbar-nav>.open.menu-see>a,
+.navbar-default .navbar-nav>.active.menu-see>a{
+  background: @see;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus{
+  color: #000;
+}
+.home-image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+hr {
+  height: 1px;
+  margin: 15px 0;
+  border-bottom: 1px dashed #93552e;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background: transparent;
 }

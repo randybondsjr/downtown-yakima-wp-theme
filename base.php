@@ -14,8 +14,28 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     
     <div class="wrap container" role="document">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="<?php echo esc_url(home_url('/')); ?>"><img src="/wordpress/wp-content/themes/downtown-yakima-wp-theme/dist/images/home.png" alt="Downtown Yakima Home" class="home-link"></a>
+        </div>
+        <div class="col-sm-6">
+          <form role="search" method="get" class="search-form form-inline pull-right" action="/search">
+            <div class="input-group">
+              <input type="hidden" name="cx" value="000682829429502656071:lvopkpnabtg" />
+              <input type="hidden" name="cof" value="FORID:1" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <input type="search" id="search-question"  value="<?php if (is_search()) { echo get_search_query(); } ?>" name="q" class="search-field form-control search-query">
+              <label class="hide"><?php _e('Search for:', 'roots'); ?></label>
+              <span class="input-group-btn">
+                <button type="submit" class="search-submit btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+          </form>
+        </div> 
+      </div>
       <div class="logo no-side-margin">
-        <a href="<?= esc_url(home_url('/')); ?>"></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>"></a>
+        <span class="hidden-xs">Organically grown. Everyday unique.</span>
       </div>
       
       <?php
@@ -33,10 +53,11 @@ use Roots\Sage\Wrapper;
         </main><!-- /.main -->
         
       </div><!-- /.content -->
-    </div><!-- /.wrap -->
-    <?php
+      <?php
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    </div><!-- /.wrap -->
+    
   </body>
 </html>
